@@ -15,12 +15,14 @@ interface EarningRow {
   commission: string;
   earning: number;
   status: 'Paid' | 'Pending';
+  alt?: string;
 }
 
 const ROWS: EarningRow[] = [
   {
     id: 1,
     productName: 'Amrutam Nari Sondarya Malt',
+    alt: 'image of Amrutam Nari Sondarya Malt',
     date: '19 Oct, 2024',
     time: '04 : 10 PM',
     coupon: 'AMU2344',
@@ -31,6 +33,7 @@ const ROWS: EarningRow[] = [
   {
     id: 2,
     productName: 'Amrutam Nari Sondarya Malt',
+    alt: 'image of second product of Amrutam Nari Sondarya Malt',
     date: '19 Oct, 2024',
     time: '05 : 10 PM',
     coupon: 'AMU2344',
@@ -41,6 +44,7 @@ const ROWS: EarningRow[] = [
   {
     id: 3,
     productName: 'Amrutam Nari Sondarya Malt',
+    alt: 'image of thrid product of Amrutam Nari Sondarya Malt',
     date: '18 Oct, 2024',
     time: '06 : 10 PM',
     coupon: 'AMU2344',
@@ -90,7 +94,7 @@ const EarningHistory = () => {
         <div className="flex items-center gap-3 min-w-[280px]">
           <img
             src="/images/product.png"
-            alt={row.productName}
+            alt={row.alt}
             className="w-8 h-8 rounded-full object-cover"
           />
           <div className="flex items-center gap-2">

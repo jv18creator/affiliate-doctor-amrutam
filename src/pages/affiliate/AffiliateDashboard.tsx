@@ -28,6 +28,7 @@ interface ReferralRow {
   clicks: number;
   orders: number;
   revenue: number;
+  alt?: string;
 }
 
 const REFERRAL_ROWS: ReferralRow[] = [
@@ -42,6 +43,7 @@ const REFERRAL_ROWS: ReferralRow[] = [
     clicks: 2,
     orders: 2,
     revenue: 345,
+    alt: 'avatar of Andrea Lalema'
   },
   {
     id: 2,
@@ -54,6 +56,7 @@ const REFERRAL_ROWS: ReferralRow[] = [
     clicks: 4,
     orders: 4,
     revenue: 564,
+    alt: 'avatar of Smith Bruklin'
   },
   {
     id: 3,
@@ -66,6 +69,7 @@ const REFERRAL_ROWS: ReferralRow[] = [
     clicks: 1,
     orders: 1,
     revenue: 200,
+    alt: 'avatar of William Stephin'
   },
 ];
 
@@ -114,7 +118,7 @@ const AffiliateDashboard: React.FC = () => {
         <div className="flex items-center gap-2 lg:min-w-auto min-w-[160px]">
           <img
             src={row.avatar}
-            alt={row.name}
+            alt={row.alt}
             className="w-8 h-8 rounded-full object-cover"
           />
           <div className="flex items-center gap-2 relative">

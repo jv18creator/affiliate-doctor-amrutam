@@ -28,18 +28,20 @@ const Pagination = ({
           <button
             onClick={() => onPageChange(Math.max(1, page - 1))}
             disabled={page === 1}
+            aria-label='previous page'
             className="w-7 h-7 rounded-lg cursor-pointer transform rotate-180 border border-border-subtle flex items-center justify-center disabled:opacity-40"
           >
             <ChevronRight className="w-2.5 h-2.5 -ml-0.5" />
-            <span className='hidden'>right</span>
+            <span className='hidden'>previous page</span>
           </button>
           <button
             onClick={() => onPageChange(Math.min(totalPages, page + 1))}
             disabled={page === totalPages}
+            aria-label='next page'
             className="w-7 h-7 rounded-lg cursor-pointer border border-border-subtle flex items-center justify-center disabled:opacity-40"
           >
             <ChevronRight className="w-2.5 h-2.5 -ml-0.5" />
-            <span className='hidden'>right</span>
+            <span className='hidden'>next page</span>
           </button>
         </div>
       </div>
