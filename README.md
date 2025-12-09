@@ -10,7 +10,7 @@ The project follows a clean component-driven architecture using modern React, Ty
 - React Router for navigations
 
 ## Project Structure
-
+```text
 src/
  ├── components/               
  │    ├── layout/              → Topbar, Sidebar, MainLayout
@@ -28,7 +28,7 @@ src/
  │
  └── styles/                   # Global and utility styling configurations
       └── index.css
-
+```
 ## Highlights
 
 - Matches Figma design precisely (spacing, typography, colors, layout)
