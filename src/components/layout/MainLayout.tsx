@@ -1,4 +1,4 @@
-import React, { type ReactNode } from 'react';
+import { type ReactNode } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import Topbar from './Topbar';
 import Sidebar from './Sidebar';

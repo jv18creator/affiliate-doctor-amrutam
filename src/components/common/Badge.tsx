@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface TBadge {
   content: string;
   status: 'warning' | 'success' | 'error';
