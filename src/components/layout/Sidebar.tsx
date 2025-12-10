@@ -12,7 +12,7 @@ import WalletIcon from '../../icons/wallet.svg?react';
 import AffiliateIcon from '../../icons/forum.svg?react';
 import ChevronDown from '../../icons/chevron-down-sm.svg?react';
 import ChevronRight from '../../icons/chevron-right-sm.svg?react';
-import { isTabSize } from '../../utils'
+import { isTabSize } from '../../utils';
 
 type SvgIcon = React.ComponentType<React.SVGProps<SVGSVGElement>>;
 

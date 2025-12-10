@@ -43,7 +43,7 @@ const REFERRAL_ROWS: ReferralRow[] = [
     clicks: 2,
     orders: 2,
     revenue: 345,
-    alt: 'avatar of Andrea Lalema'
+    alt: 'avatar of Andrea Lalema',
   },
   {
     id: 2,
@@ -56,7 +56,7 @@ const REFERRAL_ROWS: ReferralRow[] = [
     clicks: 4,
     orders: 4,
     revenue: 564,
-    alt: 'avatar of Smith Bruklin'
+    alt: 'avatar of Smith Bruklin',
   },
   {
     id: 3,
@@ -69,7 +69,7 @@ const REFERRAL_ROWS: ReferralRow[] = [
     clicks: 1,
     orders: 1,
     revenue: 200,
-    alt: 'avatar of William Stephin'
+    alt: 'avatar of William Stephin',
   },
 ];
 
@@ -101,7 +101,7 @@ const AffiliateDashboard: React.FC = () => {
       render: () => (
         <input
           type="checkbox"
-          aria-label='checkbox'
+          aria-label="checkbox"
           className="w-4 h-4 rounded border-border-strong accent-primary"
         />
       ),
@@ -124,7 +124,9 @@ const AffiliateDashboard: React.FC = () => {
           <div className="flex items-center gap-2 relative">
             <span className="font-medium">{row.name}</span>
             {row.id === 1 && (
-              <div className='absolute -right-8 -top-4'><Badge content='New' status='warning' /></div>
+              <div className="absolute -right-8 -top-4">
+                <Badge content="New" status="warning" />
+              </div>
             )}
           </div>
         </div>
@@ -198,12 +200,12 @@ const AffiliateDashboard: React.FC = () => {
               value={search}
               onChange={setSearch}
             />
-            <div className='md:block hidden'>
+            <div className="md:block hidden">
               <IconButton icon="/icons/refresh.svg" label="Refresh" />
             </div>
           </div>
           <div className="flex flex-wrap items-center gap-3">
-            <div className='md:hidden block'>
+            <div className="md:hidden block">
               <IconButton icon="/icons/refresh.svg" label="Refresh" />
             </div>
             <IconButton icon="/icons/sort.svg" label="Sort" />

@@ -27,10 +27,7 @@ function Table<T>({ columns, rows, getRowId }: TableProps<T>) {
         </thead>
         <tbody className="text-text-main">
           {rows.map((row, idx) => (
-            <tr
-              key={getRowId ? getRowId(row) : idx}
-              className=""
-            >
+            <tr key={getRowId ? getRowId(row) : idx} className="">
               {columns.map(col => (
                 <td
                   key={col.key}

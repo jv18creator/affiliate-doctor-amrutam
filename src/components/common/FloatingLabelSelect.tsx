@@ -69,14 +69,11 @@ const FloatingLabelSelect = ({
             </option>
           ))}
         </select>
-
       </div>
 
       {/* helper */}
       {placeholder && (
-        <div className="mt-2 text-xs-v2 text-text-soft">
-          {placeholder}
-        </div>
+        <div className="mt-2 text-xs-v2 text-text-soft">{placeholder}</div>
       )}
     </div>
   );

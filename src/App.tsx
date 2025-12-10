@@ -13,7 +13,10 @@ function App() {
         <Route index element={<Navigate to="/affiliate/join" replace />} />
         <Route path="/affiliate/dashboard" element={<AffiliateDashboard />} />
         <Route path="/affiliate/referral-tool" element={<ReferralTool />} />
-        <Route path="/affiliate/referral-tool/:productId" element={<ReferralTool />} />
+        <Route
+          path="/affiliate/referral-tool/:productId"
+          element={<ReferralTool />}
+        />
         <Route path="/affiliate/earning-history" element={<EarningHistory />} />
       </Route>
 

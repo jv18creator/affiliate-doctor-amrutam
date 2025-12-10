@@ -16,9 +16,16 @@ const Breadcrumb = ({ items }: BreadcrumbProps) => {
         const isLast = idx === items.length - 1;
         return (
           <div key={item.label} className="flex items-center gap-2">
-            {idx > 0 && <span className="text-icon-soft mx-2 transform scale-125 mb-1">›</span>}
+            {idx > 0 && (
+              <span className="text-icon-soft mx-2 transform scale-125 mb-1">
+                ›
+              </span>
+            )}
             {item.to && !isLast ? (
-              <Link to={item.to} className="text-text-soft hover:text-text-muted">
+              <Link
+                to={item.to}
+                className="text-text-soft hover:text-text-muted"
+              >
                 {item.label}
               </Link>
             ) : (

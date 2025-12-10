@@ -1,29 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @import 'tailwindcss';
 
 @theme {
   --color-page: #f6f7fa;
   --color-surface: #ffffff;
   --color-surface-muted: #f5f7fa;
-  --color-filled-field: #2E37A40D;
+  --color-filled-field: #2e37a40d;
   --color-surface-subtle: #f8f9fb;
   --color-surface-primary-soft: #eaf5ee;
   --color-surface-primary-icon: #f4f8f2;
   --color-inactive: #33344880;
-  --color-soft-yellow: #FDF8E5;
+  --color-soft-yellow: #fdf8e5;
 
   /* Brand */
-  --color-primary: #3A643B;
-  
+  --color-primary: #3a643b;
+
   --color-text-main: #000;
   --color-text-muted: #6b7280;
   --color-text-soft: #797979;
   --color-icon-soft: #666876;
-  --color-suffix: #7D7D7D;
+  --color-suffix: #7d7d7d;
 
   --color-border-subtle: #e5e7eb;
   --color-border-strong: #d1d5db;
-  --color-card-wrapper-subtle: #E2E2E2;
-  --color-wrapper-subtle: #E3E3E3;
+  --color-card-wrapper-subtle: #e2e2e2;
+  --color-wrapper-subtle: #e3e3e3;
 
   --color-success: #16a34a;
   --color-danger: #ef4444;
@@ -37,11 +39,13 @@
 
   --text-xs-v2: 13px;
   --text-sm-v2: 15px;
+
+  --font-poppins: 'Poppins', sans-serif;
 }
 
 ::-webkit-scrollbar {
   width: 6px;
-  height: 6px;   
+  height: 6px;
 }
 ::-webkit-scrollbar-track {
   background: transparent;

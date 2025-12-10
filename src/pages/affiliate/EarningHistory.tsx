@@ -77,7 +77,7 @@ const EarningHistory = () => {
       render: () => (
         <input
           type="checkbox"
-          aria-label='checkbox'
+          aria-label="checkbox"
           className="w-4 h-4 rounded border-border-strong accent-primary"
         />
       ),
@@ -99,9 +99,7 @@ const EarningHistory = () => {
           />
           <div className="flex items-center gap-2">
             <span className="text-sm">{row.productName}</span>
-            {row.id === 1 && (
-              <Badge content='New' status='warning' />
-            )}
+            {row.id === 1 && <Badge content="New" status="warning" />}
           </div>
         </div>
       ),

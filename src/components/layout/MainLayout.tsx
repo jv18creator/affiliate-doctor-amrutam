@@ -13,7 +13,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
   const { isOpen, close } = useSidebarStore();
 
   return (
-    <div className="min-h-screen bg-page text-text-main flex flex-col relative">
+    <div className="min-h-screen bg-page text-text-main flex flex-col relative font-poppins">
       <Topbar />
 
       {isOpen && (

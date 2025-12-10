@@ -20,14 +20,10 @@ const Topbar: React.FC = () => {
 
           <div className="flex-1 md:max-w-[280px] max-w-52 lg:ml-8 md:ml-4 ml-2">
             <div className="flex items-center gap-2 bg-surface-muted rounded-xl md:p-3 p-2">
-              <img
-                src="/icons/topbar-search.svg"
-                alt=""
-                className="w-5 h-5"
-              />
+              <img src="/icons/topbar-search.svg" alt="" className="w-5 h-5" />
               <input
                 type="text"
-                aria-label='search'
+                aria-label="search"
                 placeholder="Search here"
                 className="bg-transparent placeholder:text-primary/50 outline-none text-sm max-w-[100px] md:max-w-xs md:flex-1"
               />
@@ -36,11 +32,17 @@ const Topbar: React.FC = () => {
         </div>
 
         <div className="flex items-center md:gap-6 gap-4">
-          <button aria-label='messages' className="relative rounded-full cursor-pointer">
+          <button
+            aria-label="messages"
+            className="relative rounded-full cursor-pointer"
+          >
             <img src="/icons/messages.svg" alt="Messages" className="w-6 h-6" />
             <span className="absolute top-0 right-0 w-2.5 h-2.5 bg-danger rounded-full" />
           </button>
-          <button aria-label='notifications' className="relative rounded-full cursor-pointer">
+          <button
+            aria-label="notifications"
+            className="relative rounded-full cursor-pointer"
+          >
             <img
               src="/icons/notifications.svg"
               alt="Notifications"

@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 import Breadcrumb from '../../components/common/Breadcrumb';
 import StatCard from '../../components/common/StatCard';
-import FloatingLabelSelect, { type Option } from '../../components/common/FloatingLabelSelect';
+import FloatingLabelSelect, {
+  type Option,
+} from '../../components/common/FloatingLabelSelect';
 import { useNavigate, useParams } from 'react-router-dom';
 
 interface ProductStats {
@@ -48,24 +50,24 @@ const ReferralTool = () => {
     label: p.name,
   }));
 
-    useEffect(() => {
-      if (productId && productId !== selectedProductId) {
-        const exists = PRODUCTS.some(p => p.id === productId);
-        if (exists) {
-          setSelectedProductId(productId);
-        }
+  useEffect(() => {
+    if (productId && productId !== selectedProductId) {
+      const exists = PRODUCTS.some(p => p.id === productId);
+      if (exists) {
+        setSelectedProductId(productId);
       }
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [productId]);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [productId]);
 
-    const handleSelect = (id: string) => {
-      setSelectedProductId(id);
-      if (id) {
-        navigate(`/affiliate/referral-tool/${id}`, { replace: false });
-      } else {
-        navigate('/affiliate/referral-tool', { replace: true });
-      }
-    };
+  const handleSelect = (id: string) => {
+    setSelectedProductId(id);
+    if (id) {
+      navigate(`/affiliate/referral-tool/${id}`, { replace: false });
+    } else {
+      navigate('/affiliate/referral-tool', { replace: true });
+    }
+  };
 
   const handleCopy = async (text: string) => {
     try {
@@ -127,7 +129,7 @@ const ReferralTool = () => {
                   <input
                     readOnly
                     value={selectedProduct.link}
-                    aria-label='product link'
+                    aria-label="product link"
                     className="flex-1 border max-w-[500px] border-border-subtle rounded-xl px-3 py-2 text-sm bg-surface-subtle truncate"
                   />
                   <button
@@ -157,14 +159,13 @@ const ReferralTool = () => {
                   </button>
                 </div>
               </div>
-
             </div>
           </div>
         )}
-              <p className="text-sm text-text-main italic mt-2">
-                Note: Share this Link/Coupon with your patient. For every
-                purchase someone makes using your Link/Coupon, you get credit.
-              </p>
+        <p className="text-sm text-text-main italic mt-2">
+          Note: Share this Link/Coupon with your patient. For every purchase
+          someone makes using your Link/Coupon, you get credit.
+        </p>
       </div>
 
       {selectedProduct && (
@@ -210,7 +211,8 @@ const ReferralTool = () => {
           </button>
         </div>
         <p className="text-sm italic text-text-main text-center mt-5 ">
-        Note: Share this Link/Coupon with your patient. For every purchase someone makes using your Link/Coupon. You get credit.
+          Note: Share this Link/Coupon with your patient. For every purchase
+          someone makes using your Link/Coupon. You get credit.
         </p>
       </div>
     </div>
